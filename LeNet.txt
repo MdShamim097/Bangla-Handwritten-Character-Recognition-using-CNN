@@ -1,0 +1,15 @@
+conv 6 5 1 0
+relu
+pool 2 2
+conv 16 5 1 0
+relu
+pool 2 2
+conv 120 5 1 0
+relu
+flatten
+fc 120
+relu
+fc 84
+relu
+fc 10
+softmax
